@@ -3,22 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Manufacturing Engineer | AI for the Physical Factory</title>
-  <meta name="description" content="AI-powered manufacturing intelligence for process understanding, predictive quality, anomaly detection, optimization and data-driven control." />
+  <title>AI Process Engineer | Dynamic Control for Physical Processes</title>
+  <meta name="description" content="Data-driven control and anomaly detection for physical manufacturing processes — model-free process control, quality prediction, and monitoring at scale." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FAFAF7'/%3E%3Cpath d='M16 6 L26 16 L16 26 L6 16 Z' fill='%23B5651D'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="static/styles.css" />
 </head>
 <body>
+
+<!--
+  ============================================================
+  TABLE OF CONTENTS
+  ============================================================
+  1. Navbar                    (nav.navbar)
+  2. Hero                      first section, no id, contains SVG diagram
+  3. Process Intelligence      #intelligence
+  4. How It Works               #how-it-works
+  5. Experience (Founder)       #experience
+  6. Case Study — Physical      #deep-experience
+  7. Case Study — Digital       #digital-case-study
+  8. Vision                     #vision
+  9. Contact / Final CTA        #contact
+  10. Footer                    footer.footer
+  ============================================================
+-->
 
 <!-- ============================
      NAVBAR
 ============================ -->
 <nav class="navbar">
-  <div class="nav-brand">AI Manufacturing Engineer</div>
+  <div class="nav-brand">AI Process Engineer</div>
   <ul class="nav-links">
     <li><a href="#intelligence">Capabilities</a></li>
     <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#deep-experience">Case Studies</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -30,14 +50,14 @@
 ============================ -->
 <section class="hero">
   <div class="container hero-inner">
-
     <div class="hero-copy">
-      <p class="eyebrow">Edge-First Manufacturing AI</p>
-      <h1>AI for the<br>Physical Factory.</h1>
+      <p class="eyebrow">Data-Driven Process Intelligence</p>
+      <h1>Dynamic Control<br>for Physical Processes.</h1>
       <p class="hero-sub">Turn manufacturing data into better engineering decisions.</p>
       <p class="hero-desc">
-        We build AI/ML systems that help manufacturers understand process behavior,
-        predict quality issues, detect anomalies, and optimize manufacturing processes.
+        We build data-driven control and monitoring systems that track process
+        behavior, predict quality issues, detect anomalies, and regulate physical
+        processes in real time.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#contact">Talk to Us</a>
@@ -46,52 +66,71 @@
     </div>
 
     <div class="hero-diagram">
-      <div class="diagram-node top">FACTORY</div>
-      <div class="diagram-branches">
-        <div class="diagram-branch">Machines</div>
-        <div class="diagram-branch">Sensors</div>
-        <div class="diagram-branch">PLCs</div>
-      </div>
-      <div class="diagram-arrow">↓</div>
-      <div class="diagram-node">Process Data</div>
-      <div class="diagram-arrow">↓</div>
-      <div class="diagram-node">AI / ML Models</div>
-      <div class="diagram-arrow">↓</div>
-      <div class="diagram-node highlight">Manufacturing Intelligence</div>
-      <div class="diagram-arrow">↓</div>
-      <div class="diagram-node">Predict · Diagnose · Optimize</div>
-    </div>
+      <div class="tower">
+        <div class="tower-label">
+          <span>PROCESS SIGNAL — ANOMALY FLAGGED</span>
+        </div>
 
+        <!-- Signal trace: a monitored process value drifts outside its
+             expected range, and the deviation gets flagged. This is the
+             actual shape of what both case studies detect. -->
+        <svg viewBox="0 0 340 230" xmlns="http://www.w3.org/2000/svg" role="img"
+             aria-label="Line chart of a monitored process signal staying within an expected range, then spiking outside it at one point, which is flagged as an anomaly">
+
+          <line x1="20" y1="96" x2="320" y2="96" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 3"/>
+          <line x1="20" y1="176" x2="320" y2="176" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 3"/>
+          <text x="20" y="86" fill="var(--steel-dim)" font-family="IBM Plex Mono, monospace" font-size="9">EXPECTED RANGE</text>
+
+          <path d="M20,150 C45,142 65,152 80,155 C95,158 100,132 112,128
+                   C128,123 132,148 142,145 C158,141 162,120 172,118
+                   C188,116 192,148 202,151 C214,154 208,58 230,48
+                   C246,40 238,140 255,142 C270,144 278,152 288,150
+                   C300,148 308,138 320,134"
+                fill="none" stroke="var(--steel)" stroke-width="2"/>
+
+          <circle cx="80" cy="155" r="3" fill="var(--steel)"/>
+          <circle cx="142" cy="145" r="3" fill="var(--steel)"/>
+          <circle cx="202" cy="151" r="3" fill="var(--steel)"/>
+          <circle cx="288" cy="150" r="3" fill="var(--steel)"/>
+
+          <line x1="230" y1="48" x2="230" y2="196" stroke="var(--amber)" stroke-width="1" stroke-dasharray="3 3"/>
+          <circle cx="230" cy="48" r="5" fill="var(--amber)"/>
+          <text x="230" y="34" fill="var(--amber)" font-family="IBM Plex Mono, monospace" font-size="10" text-anchor="middle">ANOMALY</text>
+
+          <line x1="20" y1="196" x2="320" y2="196" stroke="var(--line)" stroke-width="1.2"/>
+          <text x="308" y="212" fill="var(--steel-dim)" font-family="IBM Plex Mono, monospace" font-size="9" text-anchor="middle">t →</text>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ============================
-     MANUFACTURING INTELLIGENCE
+     PROCESS INTELLIGENCE
 ============================ -->
 <section class="section bg-white" id="intelligence">
   <div class="container">
     <div class="section-header center">
       <p class="eyebrow">Capabilities</p>
-      <h2>Manufacturing Intelligence</h2>
+      <h2>Process Intelligence</h2>
     </div>
     <div class="card-grid three">
       <div class="card">
-        <div class="card-icon">01</div>
+        <div class="card-icon">PRED</div>
         <h3>Predict</h3>
         <p>Use production and process data to predict quality and process behavior before problems occur.</p>
       </div>
       <div class="card">
-        <div class="card-icon">02</div>
+        <div class="card-icon">UND</div>
         <h3>Understand</h3>
         <p>Identify patterns, anomalies and relationships across manufacturing processes.</p>
       </div>
       <div class="card">
-        <div class="card-icon">03</div>
+        <div class="card-icon">OPT</div>
         <h3>Optimize</h3>
         <p>Use data-driven models to identify opportunities for better process performance.</p>
       </div>
     </div>
-    <p class="footnote center">Long-term roadmap: intelligent process control.</p>
   </div>
 </section>
 
@@ -152,7 +191,7 @@
   <div class="container">
     <div class="section-header">
       <p class="eyebrow">Founder</p>
-      <h2>Built From Real Manufacturing Experience.</h2>
+      <h2>Built From Real Physical-Process Experience.</h2>
     </div>
     <div class="two-col">
       <div class="col-text">
@@ -167,31 +206,16 @@
           optimization, control and production AI systems.
         </p>
         <p>
-          Manufacturing experience includes optical-fiber manufacturing and AI-driven
-          process control. This research was conducted in collaboration with
-          <strong>MIT's Device Realization Lab</strong> under Dr. Brian W. Anthony,
-          where Vivek worked alongside researchers George Chen and Maëlle Sardet.
+          Process experience includes optical-fiber manufacturing and AI-driven
+          process control — one of the most demanding physical processes to instrument
+          and control, and a proving ground for methods that carry over to other complex
+          manufacturing processes. This research was conducted in collaboration with
+          <strong>MIT's Device Realization Lab</strong> under Dr. Brian W. Anthony.
         </p>
-
-        <div class="collaborators">
-          <p class="collab-label">MIT Research Collaborators</p>
-          <div class="collab-list">
-            <a class="collab-card" href="https://www.linkedin.com/in/gcfchen/" target="_blank" rel="noopener">
-              <span class="collab-name">George Chen</span>
-              <span class="collab-context">MIT Device Realization Lab</span>
-              <span class="collab-link">LinkedIn ↗</span>
-            </a>
-            <a class="collab-card" href="https://www.linkedin.com/in/maelle-sardet/" target="_blank" rel="noopener">
-              <span class="collab-name">Maëlle Sardet</span>
-              <span class="collab-context">MIT Device Realization Lab</span>
-              <span class="collab-link">LinkedIn ↗</span>
-            </a>
-          </div>
-        </div>
       </div>
       <div class="col-visual">
         <div class="stack">
-          <div class="stack-item">Manufacturing</div>
+          <div class="stack-item">Physical Process</div>
           <div class="stack-arrow">↓</div>
           <div class="stack-item">Process Data</div>
           <div class="stack-arrow">↓</div>
@@ -214,9 +238,9 @@
 <section class="section" id="deep-experience">
   <div class="container">
     <div class="section-header center">
-      <p class="eyebrow">Domain</p>
-      <h2>Where We Have Deep Experience.</h2>
-      <p class="section-sub">Optical Fiber Manufacturing</p>
+      <p class="eyebrow">Proof Point</p>
+      <h2>Proven on a Hard Control Problem.</h2>
+      <p class="section-sub">Case Study — Optical Fiber Drawing Control</p>
     </div>
     <div class="pipeline">
       <div class="pipe-step">Core Deposition</div>
@@ -230,48 +254,83 @@
       <div class="pipe-step">Quality</div>
     </div>
     <p class="body-text center">
-      We have applied data-driven modeling, machine learning, deep learning and
-      control methods to complex optical-fiber manufacturing processes.
+      Fiber drawing is a stochastic process with non-linear, delayed dynamics —
+      hard to control with a fixed analytical model. The fiber extrusion plant
+      itself was modeled directly: using measured production data from the
+      drawing process, a long short-term memory (LSTM) network learned the
+      plant's process dynamics, and black-box system identification modeled
+      the production controllers under real noise and disturbances. Combining
+      both produced a closed-loop simulation of the full extrusion system in
+      MATLAB — a digital twin that can replace the slow, iterative work of
+      manually tuning production controllers, and generalizes to other
+      manufacturing plants with similarly constrained operating domains.
     </p>
-    <p class="footnote center">Starting narrow. Building for manufacturing broadly.</p>
+    <p class="body-text center">
+      Separately, model-free deep reinforcement learning was used to regulate fiber
+      diameter directly and track dynamically varying reference trajectories,
+      outperforming standard approaches such as open-loop, PI, and quadratic dynamic
+      matrix control. Together, both approaches point to the same underlying idea —
+      learn the plant's dynamics from data, then simulate, control, or tune against
+      it in real time.
+    </p>
+    <div class="collaborators center">
+      <p class="collab-label">MIT Research Collaborators</p>
+      <div class="collab-list center">
+        <a class="collab-card" href="https://www.linkedin.com/in/gcfchen/" target="_blank" rel="noopener">
+          <span class="collab-name">George Chen</span>
+          <span class="collab-context">MIT Device Realization Lab</span>
+          <span class="collab-link">LinkedIn ↗</span>
+        </a>
+        <a class="collab-card" href="https://www.linkedin.com/in/maelle-sardet/" target="_blank" rel="noopener">
+          <span class="collab-name">Maëlle Sardet</span>
+          <span class="collab-context">MIT Device Realization Lab</span>
+          <span class="collab-link">LinkedIn ↗</span>
+        </a>
+        <a class="collab-card" href="https://www.linkedin.com/in/sangwoon-kim-0a0484150/" target="_blank" rel="noopener">
+          <span class="collab-name">Sangwoon Kim</span>
+          <span class="collab-context">MIT Device Realization Lab</span>
+          <span class="collab-link">LinkedIn ↗</span>
+        </a>
+      </div>
+    </div>
+    <p class="footnote center">Two complementary approaches to the same control problem: simulation-based and model-free.</p>
   </div>
 </section>
 
 <!-- ============================
-     PHYSICAL + DIGITAL SYSTEMS
+     DIGITAL CASE STUDY
 ============================ -->
-<section class="section bg-white" id="systems">
+<section class="section bg-white" id="digital-case-study">
   <div class="container">
     <div class="section-header center">
-      <p class="eyebrow">Expertise</p>
-      <h2>Built Across Physical and Digital Systems.</h2>
+      <p class="eyebrow">Proof Point — Digital Systems</p>
+      <h2>The Same Thinking, Applied To Data Pipelines.</h2>
+      <p class="section-sub">Case Study — Security Telemetry Health Monitoring</p>
     </div>
-    <div class="card-grid two">
-      <div class="card">
-        <h3>Physical Systems</h3>
-        <p class="card-sub">Manufacturing</p>
-        <ul>
-          <li>Process modeling</li>
-          <li>Deep learning</li>
-          <li>Reinforcement learning</li>
-          <li>Virtual sensing</li>
-          <li>Anomaly detection</li>
-          <li>Optimization</li>
-          <li>Data-driven control</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Digital Systems</h3>
-        <p class="card-sub">Cybersecurity / Data Infrastructure</p>
-        <ul>
-          <li>Large-scale statistical anomaly detection</li>
-          <li>Telemetry health monitoring</li>
-          <li>Failure detection</li>
-          <li>Statistical baselining</li>
-          <li>Proactive monitoring</li>
-        </ul>
-      </div>
+    <div class="pipeline">
+      <div class="pipe-step">Sensors (EDR / Firewall / Log Forwarders)</div>
+      <div class="pipe-sep">→</div>
+      <div class="pipe-step">Baseline Building</div>
+      <div class="pipe-sep">→</div>
+      <div class="pipe-step">Anomaly Detection</div>
+      <div class="pipe-sep">→</div>
+      <div class="pipe-step">Triage &amp; Alerting</div>
+      <div class="pipe-sep">→</div>
+      <div class="pipe-step">Agent Interface</div>
     </div>
+    <p class="body-text center">
+      A "sensor" doesn't have to be hardware. In a security operations pipeline, an
+      endpoint agent, firewall, or log-forwarding appliance emits telemetry at expected
+      intervals just like a physical sensor emits readings — and it can go silent the
+      same way. Statistical baselining and anomaly detection track volume and uptime
+      for thousands of these feeds per client and vendor, catching failures before
+      they become blind spots. Statistics separate naturally sparse or bursty feeds
+      from genuine failures, and a check against expected reporting periods catches
+      feeds that go silent or degrade quietly. It runs as a multi-stage Snowflake/Python
+      pipeline across a multi-tenant environment, with an MCP-connected agent that
+      engineers can ask directly about a sensor's health or anomalous behavior.
+    </p>
+    <p class="footnote center">Same sensor-health thinking. Physical hardware or digital telemetry.</p>
   </div>
 </section>
 
@@ -284,23 +343,11 @@
       <p class="eyebrow">Vision</p>
       <h2>From Monitoring to Intelligent Control.</h2>
     </div>
-    <div class="vision-flow">
-      <div class="vision-step">Measure</div>
-      <div class="vision-sep">→</div>
-      <div class="vision-step">Understand</div>
-      <div class="vision-sep">→</div>
-      <div class="vision-step">Predict</div>
-      <div class="vision-sep">→</div>
-      <div class="vision-step">Diagnose</div>
-      <div class="vision-sep">→</div>
-      <div class="vision-step">Optimize</div>
-      <div class="vision-sep">→</div>
-      <div class="vision-step highlight">Control</div>
-    </div>
     <p class="body-text center">
-      The long-term vision is an AI Manufacturing Engineer that learns from process data,
+      The long-term vision is an AI Process Engineer that learns from process data,
       helps engineers understand complex manufacturing behavior, and eventually supports
-      safe, data-driven process optimization and control.
+      safe, data-driven process optimization and control: measure, understand, predict,
+      diagnose, optimize, control.
     </p>
     <p class="footnote center">This is a roadmap, not a claim of current autonomous control.</p>
   </div>
@@ -312,9 +359,9 @@
 <section class="section cta-section" id="contact">
   <div class="container center">
     <p class="eyebrow">Contact</p>
-    <h2>Have a Manufacturing Problem?</h2>
+    <h2>Have a Physical Process Problem?</h2>
     <p class="hero-desc">Let's explore whether AI can help.</p>
-    <a class="btn btn-primary btn-lg" href="mailto:vivekkgp97@gmail.com?subject=Manufacturing%20Inquiry">Talk to Us</a>
+    <a class="btn btn-primary btn-lg" href="mailto:vivekkgp97@gmail.com?subject=Process%20Inquiry">Talk to Us</a>
     <div class="contact-links">
       <a href="mailto:vivekkgp97@gmail.com">vivekkgp97@gmail.com</a>
       <span class="divider">|</span>
@@ -329,8 +376,8 @@
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <strong>AI Manufacturing Engineer</strong>
-      <span>AI for the Physical Factory.</span>
+      <strong>AI Process Engineer</strong>
+      <span>Dynamic Control for Physical Processes.</span>
     </div>
     <div class="footer-links">
       <a href="mailto:vivekkgp97@gmail.com">Email</a>
@@ -338,7 +385,7 @@
     </div>
   </div>
   <div class="container">
-    <p class="footer-copy">&copy; 2026 AI Manufacturing Engineer &mdash; Vivek Singh</p>
+    <p class="footer-copy">&copy; 2026 AI Process Engineer &mdash; Vivek Singh</p>
   </div>
 </footer>
 
