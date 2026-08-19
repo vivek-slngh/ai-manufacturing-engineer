@@ -1,117 +1,346 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#071116" />
-    <meta name="description" content="AI-powered manufacturing intelligence for better engineering decisions." />
-    <title>AI Manufacturing Engineer | Manufacturing Intelligence</title>
-    <link rel="stylesheet" href="static/styles.css" />
-  </head>
-  <body>
-    <main class="bg-canvas">
-      <div class="site-shell">
-        <header class="topbar">
-          <a class="brand" href="#top" aria-label="AI Manufacturing Engineer home">
-            <span class="brand-mark" aria-hidden="true"></span>
-            <span>AI Manufacturing Engineer</span>
-          </a>
-          <nav class="nav" aria-label="Primary navigation">
-            <a href="#product">Product</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#experience">Experience</a>
-            <a href="#vision">Vision</a>
-            <a href="#pilot">Request a Pilot</a>
-          </nav>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Manufacturing Engineer | AI for the Physical Factory</title>
+  <meta name="description" content="AI-powered manufacturing intelligence for process understanding, predictive quality, anomaly detection, optimization and data-driven control." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/styles.css" />
+</head>
+<body>
 
-        <section class="hero section-frame" id="top">
-          <div class="hero-copy">
-            <p class="eyebrow">Edge-First Manufacturing Intelligence</p>
-            <h1>Your Factory Has Data. We Turn It Into Decisions.</h1>
-            <p class="lead">AI-powered manufacturing intelligence that connects to your existing machines and production data to help engineers predict problems, understand processes, and improve quality.</p>
-            <div class="hero-actions">
-              <a class="button-primary" href="#pilot">Request a Pilot</a>
-              <a class="button-secondary" href="#how-it-works">See How It Works</a>
-            </div>
-          </div>
-          <div class="system-panel" aria-label="Platform data flow">
-            <div class="system-column"><span class="system-label">Machines</span><span class="system-node">Production Lines</span><span class="system-node">Process Equipment</span></div>
-            <div class="system-arrow" aria-hidden="true"></div>
-            <div class="system-column"><span class="system-label">Sensors / PLCs</span><span class="system-node">Signals</span><span class="system-node">States</span></div>
-            <div class="system-arrow" aria-hidden="true"></div>
-            <div class="system-column"><span class="system-label">Edge Intelligence</span><span class="system-node">Gateway</span><span class="system-node">Local Models</span></div>
-            <div class="system-arrow" aria-hidden="true"></div>
-            <div class="system-column system-column--wide"><span class="system-label">AI Manufacturing Engineer</span><div class="capability-grid"><span>Predict</span><span>Diagnose</span><span>Optimize</span><span>Recommend</span></div></div>
-          </div>
-        </section>
+<!-- ============================
+     NAVBAR
+============================ -->
+<nav class="navbar">
+  <div class="nav-brand">AI Manufacturing Engineer</div>
+  <ul class="nav-links">
+    <li><a href="#intelligence">Capabilities</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn btn-primary nav-cta" href="#contact">Talk to Us</a>
+</nav>
 
-        <section class="section-grid" id="product">
-          <div class="section-heading"><p class="eyebrow">The Problem</p><h2>Most factories don&apos;t have a data problem. They have an intelligence problem.</h2></div>
-          <div class="section-copy"><p>For many small and mid-sized manufacturers, production data already exists across PLC signals, machine logs, sensors, spreadsheets, quality measurements, and production records.</p><p>The challenge is turning fragmented information into engineering decisions before process drift, recurring defects, and unplanned downtime become expensive.</p></div>
-        </section>
+<!-- ============================
+     HERO
+============================ -->
+<section class="hero">
+  <div class="container hero-inner">
 
-        <section class="section-frame" id="how-it-works">
-          <div class="section-heading section-heading--stacked"><p class="eyebrow">How It Works</p><h2>From Machine Data to Manufacturing Intelligence</h2></div>
-          <div class="step-grid">
-            <article class="step-card"><span class="step-id">01</span><h3>Connect</h3><p>Connect to PLCs, sensors, machine systems, databases, CSV files, and Excel exports.</p></article>
-            <article class="step-card"><span class="step-id">02</span><h3>Understand</h3><p>Organize process variables, machine states, production history, and quality measurements.</p></article>
-            <article class="step-card"><span class="step-id">03</span><h3>Predict &amp; Diagnose</h3><p>Identify anomalies, process drift, and quality risks while helping engineers trace what changed.</p></article>
-            <article class="step-card"><span class="step-id">04</span><h3>Recommend</h3><p>Surface actionable guidance around likely causes, next checks, and process improvements.</p></article>
-          </div>
-        </section>
-
-        <section class="section-grid" aria-labelledby="edge-title">
-          <div class="section-heading"><p class="eyebrow">Architecture</p><h2 id="edge-title">No Cloud Infrastructure Required to Get Started</h2></div>
-          <div class="architecture-panel"><div class="architecture-flow"><span>Factory Machines</span><span>PLCs / Sensors</span><span>Edge Gateway</span><span>Local Data Platform</span><span>AI / ML Engine</span><span>Manufacturing Intelligence</span></div><p>Start with the infrastructure you already have. The edge-first approach keeps data collection and processing close to the machines, with cloud connectivity added only when it makes operational sense.</p></div>
-        </section>
-
-        <section class="section-frame">
-          <div class="section-heading section-heading--stacked"><p class="eyebrow">Capabilities</p><h2>Focused on practical engineering outcomes</h2></div>
-          <div class="card-grid">
-            <article class="capability-card"><span class="status-tag">Current focus</span><h3>Quality Prediction</h3><p>Predict potential quality issues from process conditions and historical production data.</p></article>
-            <article class="capability-card"><span class="status-tag">Current focus</span><h3>Process Monitoring</h3><p>Detect abnormal behavior and process drift before they become expensive manufacturing problems.</p></article>
-            <article class="capability-card"><span class="status-tag">Current focus</span><h3>Root-Cause Analysis</h3><p>Connect process changes with quality outcomes to help engineers investigate problems faster.</p></article>
-            <article class="capability-card"><span class="status-tag status-tag--roadmap">Roadmap</span><h3>Process Optimization</h3><p>Use data-driven models to identify better operating conditions and support engineering decisions.</p></article>
-          </div>
-        </section>
-
-        <section class="section-grid" id="experience">
-          <div class="section-heading"><p class="eyebrow">Experience</p><h2>Built from Real Manufacturing Experience</h2></div>
-          <div class="section-copy"><p>AI manufacturing is not just a software problem. It requires understanding the physical process, the data generated by that process, and how engineering decisions affect outcomes.</p><p>Vivek Singh brings hands-on experience in industrial manufacturing and AI/ML. During work at STL Technology Solutions, he was directly involved in optical-fiber manufacturing research covering core deposition, cladding deposition, sintering, soaking, and rod draw.</p><p>That work included collaboration with MIT&apos;s Device Realization Lab and Dr. Brian W. Anthony on data-driven manufacturing and control research.</p></div>
-        </section>
-
-        <section class="section-frame">
-          <div class="credibility-rail"><span>Industrial Manufacturing</span><span>AI / ML / DL</span><span>Data-Driven Control</span><span>MIT Research Collaboration</span><span>AI Manufacturing Engineer</span></div>
-        </section>
-
-        <section class="section-grid">
-          <div class="section-heading"><p class="eyebrow">Initial Focus</p><h2>Starting Where We Have Deep Expertise</h2></div>
-          <div class="section-copy"><div class="fiber-flow" aria-label="Optical fiber manufacturing flow"><span>SiO<sub>2</sub></span><span>Core Deposition</span><span>Cladding Deposition</span><span>Sintering</span><span>Soaking</span><span>Rod Draw</span><span>125 μm Fiber</span></div><p>Our initial experience comes from applying data-driven methods to complex optical-fiber manufacturing processes.</p><p class="pull-quote">Starting narrow. Building for manufacturing broadly.</p></div>
-        </section>
-
-        <section class="section-frame" id="vision">
-          <div class="section-heading section-heading--stacked"><p class="eyebrow">Vision</p><h2>From Monitoring to Autonomous Manufacturing</h2></div>
-          <div class="vision-panel"><div class="vision-flow"><span>Monitor</span><span>Predict</span><span>Diagnose</span><span>Recommend</span><span>Optimize</span><span>Control</span></div><p>The long-term vision is an AI manufacturing engineer that continuously learns from process data, helps engineers understand complex manufacturing behavior, and eventually supports safe, data-driven optimization and control.</p><p class="roadmap-note">Current positioning is focused on monitoring, prediction, diagnosis, and recommendations rather than claiming autonomous factory control today.</p></div>
-        </section>
-
-        <section class="cta-panel" id="pilot">
-          <div class="cta-copy"><p class="eyebrow">Request a Pilot</p><h2>Have machines. Have data. Let&apos;s make it useful.</h2><p>We&apos;re looking to work with a small number of manufacturing teams on early pilot engagements.</p></div>
-          <form class="pilot-form" id="pilot-form"><label><span>Name</span><input required name="name" placeholder="Your name" /></label><label><span>Company</span><input required name="company" placeholder="Company name" /></label><label><span>Email</span><input required type="email" name="email" placeholder="name@company.com" /></label><label><span>Industry</span><input name="industry" placeholder="Industry" /></label><label><span>Manufacturing process</span><textarea name="process" rows="3" placeholder="What do you manufacture?"></textarea></label><label><span>Current data setup</span><textarea name="data-setup" rows="3" placeholder="How is your production data currently collected?"></textarea></label><button class="button-primary" type="submit">Request a Pilot</button><p class="form-note" id="form-note">This static MVP opens your email client with the request details.</p></form>
-        </section>
-
-        <footer class="footer"><div><p class="footer-title">AI Manufacturing Engineer</p><p>Data → Intelligence → Better Manufacturing</p></div><p>© 2026 AI Manufacturing Engineer</p></footer>
+    <div class="hero-copy">
+      <p class="eyebrow">Edge-First Manufacturing AI</p>
+      <h1>AI for the<br>Physical Factory.</h1>
+      <p class="hero-sub">Turn manufacturing data into better engineering decisions.</p>
+      <p class="hero-desc">
+        We build AI/ML systems that help manufacturers understand process behavior,
+        predict quality issues, detect anomalies, and optimize manufacturing processes.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Talk to Us</a>
+        <a class="btn btn-outline" href="#how-it-works">See How It Works</a>
       </div>
-    </main>
-    <script>
-      document.getElementById("pilot-form").addEventListener("submit", function (event) {
-        event.preventDefault();
-        const form = new FormData(event.currentTarget);
-        const subject = encodeURIComponent("Manufacturing pilot request");
-        const body = encodeURIComponent([...form.entries()].map(([key, value]) => `${key}: ${value}`).join("\n\n"));
-        window.location.href = `mailto:?subject=${subject}&body=${body}`;
-        document.getElementById("form-note").textContent = "Your email client should open with the request details prepared. Add your pilot inbox before launch.";
-      });
-    </script>
-  </body>
+    </div>
+
+    <div class="hero-diagram">
+      <div class="diagram-node top">FACTORY</div>
+      <div class="diagram-branches">
+        <div class="diagram-branch">Machines</div>
+        <div class="diagram-branch">Sensors</div>
+        <div class="diagram-branch">PLCs</div>
+      </div>
+      <div class="diagram-arrow">↓</div>
+      <div class="diagram-node">Process Data</div>
+      <div class="diagram-arrow">↓</div>
+      <div class="diagram-node">AI / ML Models</div>
+      <div class="diagram-arrow">↓</div>
+      <div class="diagram-node highlight">Manufacturing Intelligence</div>
+      <div class="diagram-arrow">↓</div>
+      <div class="diagram-node">Predict · Diagnose · Optimize</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================
+     MANUFACTURING INTELLIGENCE
+============================ -->
+<section class="section bg-white" id="intelligence">
+  <div class="container">
+    <div class="section-header center">
+      <p class="eyebrow">Capabilities</p>
+      <h2>Manufacturing Intelligence</h2>
+    </div>
+    <div class="card-grid three">
+      <div class="card">
+        <div class="card-icon">01</div>
+        <h3>Predict</h3>
+        <p>Use production and process data to predict quality and process behavior before problems occur.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">02</div>
+        <h3>Understand</h3>
+        <p>Identify patterns, anomalies and relationships across manufacturing processes.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">03</div>
+        <h3>Optimize</h3>
+        <p>Use data-driven models to identify opportunities for better process performance.</p>
+      </div>
+    </div>
+    <p class="footnote center">Long-term roadmap: intelligent process control.</p>
+  </div>
+</section>
+
+<!-- ============================
+     HOW IT WORKS
+============================ -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-header center">
+      <p class="eyebrow">Process</p>
+      <h2>From Process Data to Engineering Intelligence</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Connect</h3>
+          <p>Existing machines, sensors, PLCs and production data — no full migration needed.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>Understand</h3>
+          <p>Analyze process variables, time-series behavior and quality measurements.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>Predict</h3>
+          <p>Predict process behavior, quality outcomes and anomalies early.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3>Diagnose</h3>
+          <p>Help identify relationships and potential causes of process deviations.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <h3>Optimize</h3>
+          <p>Data-driven models support better operating decisions and setpoint recommendations.</p>
+        </div>
+      </div>
+    </div>
+    <p class="footnote center">Long-term: support safe, constrained intelligent process control.</p>
+  </div>
+</section>
+
+<!-- ============================
+     EXPERIENCE
+============================ -->
+<section class="section bg-white" id="experience">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Founder</p>
+      <h2>Built From Real Manufacturing Experience.</h2>
+    </div>
+    <div class="two-col">
+      <div class="col-text">
+        <p class="founder-name">
+          <a href="https://www.linkedin.com/in/vs-singh/" target="_blank" rel="noopener">Vivek Singh ↗</a>
+        </p>
+        <p class="founder-title">AI Researcher &amp; Machine Learning Engineer</p>
+        <p>
+          Vivek works at the intersection of AI, complex systems and engineering.
+          His experience spans industrial manufacturing, machine learning, deep learning,
+          data-driven process modeling, reinforcement learning, anomaly detection,
+          optimization, control and production AI systems.
+        </p>
+        <p>
+          Manufacturing experience includes optical-fiber manufacturing and AI-driven
+          process control. This research was conducted in collaboration with
+          <strong>MIT's Device Realization Lab</strong> under Dr. Brian W. Anthony,
+          where Vivek worked alongside researchers George Chen and Maëlle Sardet.
+        </p>
+
+        <div class="collaborators">
+          <p class="collab-label">MIT Research Collaborators</p>
+          <div class="collab-list">
+            <a class="collab-card" href="https://www.linkedin.com/in/gcfchen/" target="_blank" rel="noopener">
+              <span class="collab-name">George Chen</span>
+              <span class="collab-context">MIT Device Realization Lab</span>
+              <span class="collab-link">LinkedIn ↗</span>
+            </a>
+            <a class="collab-card" href="https://www.linkedin.com/in/maelle-sardet/" target="_blank" rel="noopener">
+              <span class="collab-name">Maëlle Sardet</span>
+              <span class="collab-context">MIT Device Realization Lab</span>
+              <span class="collab-link">LinkedIn ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-visual">
+        <div class="stack">
+          <div class="stack-item">Manufacturing</div>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-item">Process Data</div>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-item">ML / Deep Learning</div>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-item">Process Modeling</div>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-item">Optimization</div>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-item highlight">Control</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     DEEP EXPERIENCE
+============================ -->
+<section class="section" id="deep-experience">
+  <div class="container">
+    <div class="section-header center">
+      <p class="eyebrow">Domain</p>
+      <h2>Where We Have Deep Experience.</h2>
+      <p class="section-sub">Optical Fiber Manufacturing</p>
+    </div>
+    <div class="pipeline">
+      <div class="pipe-step">Core Deposition</div>
+      <div class="pipe-sep">→</div>
+      <div class="pipe-step">Sintering</div>
+      <div class="pipe-sep">→</div>
+      <div class="pipe-step">Rod Draw</div>
+      <div class="pipe-sep">→</div>
+      <div class="pipe-step">Fiber Drawing</div>
+      <div class="pipe-sep">→</div>
+      <div class="pipe-step">Quality</div>
+    </div>
+    <p class="body-text center">
+      We have applied data-driven modeling, machine learning, deep learning and
+      control methods to complex optical-fiber manufacturing processes.
+    </p>
+    <p class="footnote center">Starting narrow. Building for manufacturing broadly.</p>
+  </div>
+</section>
+
+<!-- ============================
+     PHYSICAL + DIGITAL SYSTEMS
+============================ -->
+<section class="section bg-white" id="systems">
+  <div class="container">
+    <div class="section-header center">
+      <p class="eyebrow">Expertise</p>
+      <h2>Built Across Physical and Digital Systems.</h2>
+    </div>
+    <div class="card-grid two">
+      <div class="card">
+        <h3>Physical Systems</h3>
+        <p class="card-sub">Manufacturing</p>
+        <ul>
+          <li>Process modeling</li>
+          <li>Deep learning</li>
+          <li>Reinforcement learning</li>
+          <li>Virtual sensing</li>
+          <li>Anomaly detection</li>
+          <li>Optimization</li>
+          <li>Data-driven control</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Digital Systems</h3>
+        <p class="card-sub">Cybersecurity / Data Infrastructure</p>
+        <ul>
+          <li>Large-scale statistical anomaly detection</li>
+          <li>Telemetry health monitoring</li>
+          <li>Failure detection</li>
+          <li>Statistical baselining</li>
+          <li>Proactive monitoring</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     VISION
+============================ -->
+<section class="section" id="vision">
+  <div class="container">
+    <div class="section-header center">
+      <p class="eyebrow">Vision</p>
+      <h2>From Monitoring to Intelligent Control.</h2>
+    </div>
+    <div class="vision-flow">
+      <div class="vision-step">Measure</div>
+      <div class="vision-sep">→</div>
+      <div class="vision-step">Understand</div>
+      <div class="vision-sep">→</div>
+      <div class="vision-step">Predict</div>
+      <div class="vision-sep">→</div>
+      <div class="vision-step">Diagnose</div>
+      <div class="vision-sep">→</div>
+      <div class="vision-step">Optimize</div>
+      <div class="vision-sep">→</div>
+      <div class="vision-step highlight">Control</div>
+    </div>
+    <p class="body-text center">
+      The long-term vision is an AI Manufacturing Engineer that learns from process data,
+      helps engineers understand complex manufacturing behavior, and eventually supports
+      safe, data-driven process optimization and control.
+    </p>
+    <p class="footnote center">This is a roadmap, not a claim of current autonomous control.</p>
+  </div>
+</section>
+
+<!-- ============================
+     FINAL CTA
+============================ -->
+<section class="section cta-section" id="contact">
+  <div class="container center">
+    <p class="eyebrow">Contact</p>
+    <h2>Have a Manufacturing Problem?</h2>
+    <p class="hero-desc">Let's explore whether AI can help.</p>
+    <a class="btn btn-primary btn-lg" href="mailto:vivekkgp97@gmail.com?subject=Manufacturing%20Inquiry">Talk to Us</a>
+    <div class="contact-links">
+      <a href="mailto:vivekkgp97@gmail.com">vivekkgp97@gmail.com</a>
+      <span class="divider">|</span>
+      <a href="https://www.linkedin.com/in/vs-singh/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     FOOTER
+============================ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <strong>AI Manufacturing Engineer</strong>
+      <span>AI for the Physical Factory.</span>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:vivekkgp97@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/vs-singh/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container">
+    <p class="footer-copy">&copy; 2026 AI Manufacturing Engineer &mdash; Vivek Singh</p>
+  </div>
+</footer>
+
+</body>
 </html>
